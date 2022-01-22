@@ -1740,9 +1740,9 @@ type TRACKMOUSEEVENT struct {
 
 // For use with WM_COPYDATA
 type COPYDATA struct {
-	dwData uintptr
-	cbData uint32
-	lpData uintptr
+	DwData uintptr
+	CbData uint32
+	LpData uintptr
 }
 
 type HIGHCONTRAST struct {
