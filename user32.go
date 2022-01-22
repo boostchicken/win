@@ -47,6 +47,7 @@ const (
 	MB_RIGHT                = 0x00080000
 	MB_RTLREADING           = 0x00100000
 	MB_SERVICE_NOTIFICATION = 0x00200000
+	invalidHandleValue      = ^windows.Handle(0)
 )
 
 // Dialog box command ids
@@ -1735,6 +1736,13 @@ type TRACKMOUSEEVENT struct {
 	DwFlags     uint32
 	HwndTrack   HWND
 	DwHoverTime uint32
+}
+
+// For use with WM_COPYDATA
+type COPYDATA struct {
+	dwData uintptr
+	cbData uint32
+	lpData uintptr
 }
 
 type HIGHCONTRAST struct {
