@@ -48,7 +48,7 @@ const (
 	MB_RIGHT                = 0x00080000
 	MB_RTLREADING           = 0x00100000
 	MB_SERVICE_NOTIFICATION = 0x00200000
-	invalidHandleValue      = ^windows.Handle(0)
+
 )
 
 // Dialog box command ids
@@ -898,6 +898,7 @@ const (
 	WM_MOUSELEAVE             = 0X2A3
 	WM_CLIPBOARDUPDATE        = 0x031D
 	WM_UNICHAR                = 0x0109
+	INVALID_HANDLE_VALUE    = ^windows.Handle(0)
 )
 
 const (
